@@ -1,0 +1,39 @@
+\<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>yay this is shit</title>
+    </head>
+    <body>
+
+        <p>Hello xd</p>
+
+        <style>
+            .dot {
+                box-sizing: border-box;
+                position: absolute;
+                background-color: black;
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+            }
+        </style>
+
+        <script>
+            function createNewDot (event) {
+                console.log("click")
+                let x = event.clientX
+                let y = event.clientY
+
+                let newDot = document.createElement('div')
+                newDot.setAttribute("class", "dot")
+                newDot.style.top = (y - 4) + "px"
+                newDot.style.left = (x - 4) + "px"
+                document.body.appendChild(newDot)
+            }
+
+            window.addEventListener("mousemove", createNewDot)
+        </script>
+
+    </body>
+</html>
