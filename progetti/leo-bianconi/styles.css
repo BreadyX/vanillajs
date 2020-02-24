@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 8rem;
+}
+p {
+    font-size: 3rem;
+}
+
+/* General classes */
+
+.flex-center {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* navbar */
+nav {
+    height: 10vh;
+    min-height: 8rem;
+    background: purple;
+}
+
+/* title section */
+.logo-div {
+    min-height: 80vh;
+    background: rgb(151, 151, 151);
+
+}
+
+.logo {
+    font-family: inherit;
+    user-select: none;
+}
+
+.subtitle {
+    background: grey;
+    min-height: 10vh;
+}
+
+
+.others-div {
+    position: absolute;
+    width: 100vw;
+
+    text-align: center;
+}
